@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Code Alpha Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet"> -->
+    <!-- Ankit singh cse Aec 25 -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1>Survey Form</h1>
+    </header>
+
+    <form action="https://formspree.io/f/xzblrenq" method="post" id="survey-form"  >
+       
+
+        <fieldset class="fieldset">
+
+            <div class="sub-group">
+                <label class="left" id="name-label" for="name">Name:</label>
+                <input type="text" name="customer-name" class="right input-field" id="name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="sub-group">
+                <label class="left" id="email-label" for="email">Email:</label>
+                <input type="email" name="Email-address" class="right input-field" placeholder="Enter your email"
+                    id="email" required>
+            </div>
+
+            <div class="sub-group">
+                <label class="left" id="number-label" for="number">Age:</label>
+                <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field"
+                    id="number">
+            </div>
+
+            <div class="sub-group">
+                <label class="left" id="handphone-label" for="handphone">Phone:</label>
+
+                <input type="text" placeholder="Phone Number" class="right input-field" id="handphone">
+            </div>
+
+            <div class="sub-group">
+                <label class="left" for="dropdown">This is Your First Internship?</label>
+
+                <select class="right dropdown" id="dropdown" name="dropdown">
+                    <option selected disabled>Select an option</option>
+                    <option value="first">Yes</option>
+                    <option value="never">No</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <div class="sub-group">
+                <label class="left">
+                    Which Programming Language Do You Use?</label>
+
+                <ul style="list-style: none;" class="right">
+
+                    <li class="checkbox"><label><input type="checkbox" name="lan" value="exodus">C/C++</label></li>
+                    <li class="checkbox"><label><input type="checkbox" name="lan" value="alcatraz">Python</label>
+                    </li>
+                    <li class="checkbox"><label><input type="checkbox" name="lan" value="aokigahara">Java<label>
+                    </li>
+                    <li class="checkbox"><label><input type="checkbox" name="lan" value="mausoleum">Php</label>
+                    </li>
+                    <li class="checkbox"><label><input type="checkbox" name="lan"
+                                value="castiglione">C#</label></li>
+                </ul>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <div class="sub-group">
+                <label class="left" id="left-radio">Will you recommend Code Alpha to a Friend?</label>
+
+                <ul style="list-style: none" class="right">
+                    <li class="radio"><label><input name="radio-buttons" value="1" type="radio"
+                                class="recommendation">Yes</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="2" type="radio"
+                                class="recommendation">Maybe</label></li>
+                    <li class="radio"><label><input name="radio-buttons" value="3" type="radio"
+                                class="recommendation">No</label></li>
+                </ul>
+            </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+            <h2>Any comments or suggestions?</h2>
+
+            <div class="commentbox">
+
+                <textarea rows="4" placeholder="Enter your comment here..."></textarea>
+
+                <br><br>
+
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </fieldset>
+    </form>
+    </div>
+</body>
+
+</html>
