@@ -1,2 +1,2 @@
-# CodeApha
+# CodeAlpha
 Code Alpha intership Task 
