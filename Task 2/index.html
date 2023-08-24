@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Code Alpha Survey Form</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <h1 class="er"> Login Page</h1>
+    </header>
+
+    <form action="https://formspree.io/f/mbjvoopl" method="post" id="survey-form">
+
+          <br>
+          <br>
+        <fieldset class="fieldset">
+
+            <div class="sub-group">
+                <label class="left" id="name-label" for="name">User Name:</label>
+                <input type="text" name="customer-name" class="right input-field" id="name"
+                    placeholder="Enter your name" required>
+            </div>
+
+            <div class="sub-group">
+                <label class="left" id="email-label" for="email">Password:</label>
+                <input type="Password" name="Password" class="right input-field" placeholder="Enter your password"
+                    id="email" required>
+            </div>
+            <br>
+            
+
+            <!-- <div class="sub-group">
+                <label class="left" id="number-label" for="number">Age:</label>
+                <input type="number" name="Age" placeholder="Age" min="1" max="100" class="right input-field"
+                    id="number">
+            </div>
+
+            <div class="sub-group">
+                <label class="left" id="handphone-label" for="handphone">Phone:</label>
+
+                <input type="text" placeholder="Phone Number" class="right input-field" id="handphone">
+            </div> -->
+
+            <!-- <div class="sub-group">
+                <label class="left" for="dropdown">This is Your First Internship?</label>
+
+                <select class="right dropdown" id="dropdown" name="This is your First Internship">
+                    <option selected disabled>Select an option</option>
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
+            </div>
+        </fieldset> -->
+
+        <!-- <fieldset class="fieldset">
+            <div class="sub-group">
+                <label class="left">
+                    Which Programming Language Do You Use?</label>
+
+                <ul style="list-style: none;" class="right">
+
+                    <li class="checkbox"><label><input type="checkbox" name="language" value="C/C++">C/C++</label></li>
+                    <li class="checkbox"><label><input type="checkbox" name="language" value="Python">Python</label>
+                    </li>
+                    <li class="checkbox"><label><input type="checkbox" name="language" value="Java">Java<label>
+                    </li>
+                    <li class="checkbox"><label><input type="checkbox" name="language" value="Php">Php</label>
+                    </li>
+                    <li class="checkbox"><label><input type="checkbox" name="language" value="C#">C#</label></li>
+                </ul>
+            </div>
+        </fieldset> -->
+<!-- 
+        <fieldset class="fieldset">
+            <div class="sub-group">
+                <label class="left" id="left-radio">Will you recommend Code Alpha to a Friend?</label>
+
+                <ul style="list-style: none" class="right">
+                    <li class="radio"><label><input name="Will you recommend Code Alpha to a Friend" value="YES"
+                                type="radio" class="recommendation">Yes</label></li>
+                    <li class="radio"><label><input name="Will you recommend Code Alpha to a Friend" value="Maybe"
+                                type="radio" class="recommendation">Maybe</label></li>
+                    <li class="radio"><label><input name="Will you recommend Code Alpha to a Friend" value="No"
+                                type="radio" class="recommendation">No</label></li>
+                </ul>
+            </div>
+        </fieldset> -->
+
+
+        
+
+        <fieldset class="fieldset">
+            <!-- <h2>Any comments or suggestions?</h2> -->
+
+            <div class="commentbox">
+
+                <!-- <textarea rows="4" placeholder="Enter your comment here..."></textarea> -->
+                <br>
+                <!-- <br> -->
+        
+                <div class="captcha">
+                    <label>Enter Captcha:</label>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" readonly id="capt">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="textinput">
+                        </div>
+                    </div>
+                   
+
+                    <script type="text/javascript">
+                        function cap(){
+                    var alpha = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V'
+                        ,'W','X','Y','Z','1','2','3','4','5','6','7','8','9','0','a','b','c','d','e','f','g','h','i',
+                        'j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z', '!','@','#','$','%','^','&','*','+'];
+                        var a = alpha[Math.floor(Math.random()*71)];
+                        var b = alpha[Math.floor(Math.random()*71)];
+                        var c = alpha[Math.floor(Math.random()*71)];
+                        var d = alpha[Math.floor(Math.random()*71)];
+                        var e = alpha[Math.floor(Math.random()*71)];
+                        var f = alpha[Math.floor(Math.random()*71)];
+                    
+                        var final = a+b+c+d+e+f;
+                        document.getElementById("capt").value=final;
+                             }
+                        function validcap(){
+                              var stg1 = document.getElementById('capt').value;
+                        var stg2 = document.getElementById('textinput').value;
+                        if(stg1==stg2){
+                            alert("Form is validated Succesfully");
+                        return true;
+                              }else{
+                            alert("Please enter a valid captcha");
+                        return false;
+                              }
+                             }
+                    
+                    
+                            </script>
+                        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+                    
+
+                    <!-- <div class="form-group">
+                        <button onclick="validcap()" class="btn btn-lg btn-success btn-block">Submit</button>
+                    </div> -->
+    </form>
+                 <h6>Captcha not visible <img src="refresh.jpg" width="40px" onclick="cap()">
+                 </h6>
+                 <p>New Here?<a href="">Sign Up</a> </p>
+		         <p>Forgotten Password?<a href="">Recover here</a> </p>
+
+    </div>
+
+
+
+    <br><br>
+
+    <button id="submit" type="submit">Submit</button>
+    </div>
+    </fieldset>
+    </form>
+    </div>
+
+
+<script></script>
+
+</body>
+
+</html>
